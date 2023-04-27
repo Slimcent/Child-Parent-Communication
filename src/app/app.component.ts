@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ChildParentCommunication';
+
+  currentItem = 'Television'; // sending this data to the child component
+
+  items = ['item1', 'item2', 'item3', 'item4']; // receiving input to this data from the child component
+
+  addItem(newItem: string) {
+    this.items.push(newItem);
+  }
 }
